@@ -98,6 +98,7 @@ if (!$page_info) {
 }
 
 //check if user is banned, this comes from the cache TODO: update to new ban system
+// PPLEASE ADD MAIN SITE FUNCTIONALITY
 if (!file_exists(FORUM_ROOT . '/app_config/cache/bans.php')) {
 	CacheEngine::CacheBans();
 }
